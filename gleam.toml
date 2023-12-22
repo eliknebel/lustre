@@ -12,7 +12,13 @@ gleam = ">= 0.32.0"
 
 internal_modules = [
   "lustre/try",
+  "lustre/live/internal",
 ]
 
 [dependencies]
-gleam_stdlib = "~> 0.31"
+gleam_stdlib = "~> 0.32"
+gleam_json = "~> 0.6"
+gleam_erlang = "~> 0.22"
+gleam_otp = "~> 0.7"
+ids = "~> 0.10"
+

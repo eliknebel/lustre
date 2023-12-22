@@ -65,3 +65,9 @@ pub fn map(effect: Effect(a), f: fn(a) -> b) -> Effect(b) {
     }
   })
 }
+
+pub fn to_list(
+  effect: Effect(msg),
+) -> List(fn(fn(msg) -> Nil, fn(String, Dynamic) -> Nil) -> Nil) {
+  effect.all
+}
